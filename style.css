@@ -1,0 +1,329 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --primary-color: beige;
+    --secodary-color: #ffffff;
+}
+.dark-theme{
+    --primary-color: rgb(56, 56, 56);
+    --secodary-color: #818181;
+}
+
+body{
+    background-color: var(--primary-color);
+}
+#icon{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 100vh;
+    width: 100%;
+}
+.aside{
+    border-right: 1px solid #00000000;
+    margin-top: 20px;
+    margin-left:20px ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.aside h3{
+    line-height: 20px;
+
+}
+.aside span{
+    color: orangered;
+    font-size: 30px;
+}
+.tittle-name{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+}
+.saves{
+    border: 1px solid var(--secodary-color);
+    margin-right: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    background-color: var(--secodary-color);
+}
+
+.tittle-name input{
+    border: none;
+}
+.tittle-name ion-icon{
+    font-size: 20px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.tittle-name ion-icon:hover{
+    background-color: var(--primary-color);
+    color: orangered;
+}
+.search{
+    padding: 10px;
+    background-color: var(--secodary-color);
+    margin-right: 10px;
+    border-radius: 50px;
+    position: relative;
+    top: 50dvh;
+}
+
+.search button{
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    display: flex;
+    cursor: pointer;
+    background-color: transparent;    
+}
+.search form{
+    display: flex;
+    align-items: center;
+    
+}
+.search input{
+    height: 25px;
+    outline: none;
+    border: none;
+    width: 100%;
+    background-color: transparent;
+}
+
+.search input::placeholder{
+        padding-left: 5px;
+        color: #000;
+}
+
+.main{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.main .main-text-format{
+    width: 100%;
+    border: 1px solidvar(--secodary-color);
+    height: 8vh;
+    background-color: var(--secodary-color);
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.formating-icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.formating-icons span{
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.formating-icons span:hover{
+    background-color: var(--primary-color);
+}
+
+.text-area{
+    margin-top: 20px;
+    width: 100%;
+}
+.text-area textarea{
+    border-radius: 20px;
+    width: 100%;
+    border: none;
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 20px;
+    padding-right: 20px;
+
+}
+
+.text-area textarea:focus {
+    outline: 1px solid gray;
+}
+
+.text-area textarea::placeholder{
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 20px;
+}
+.save-text{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.save-text {
+    max-width: 95px;
+    padding: 5px 30px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: orangered;
+    color: var(--secodary-color);
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.save-text:hover{
+    color: orangered;
+    background-color: var(--secodary-color);
+    border: 1px solid orangered;
+    
+}
+ 
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+  }
+  button {
+    height: 28px;
+    width: 28px;
+    display: grid;
+    place-items: center;
+    border-radius: 3px;
+    border: none;
+    background-color: var(--secodary-color);
+    outline: none;
+    color: #020929;
+  }
+  select {
+    padding: 7px;
+    border: 1px solid #020929;
+    border-radius: 3px;
+  }
+  .options label,
+  .options select {
+    font-family: "Poppins", sans-serif;
+  }
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 40px;
+    height: 28px;
+    border: none;
+    cursor: pointer;
+  }
+  input[type="color"]::-webkit-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px var(--secodary-color), 0 0 0 3px #020929;
+  }
+  input[type="color"]::-moz-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px var(--secodary-color), 0 0 0 3px #020929;
+  }
+  #text-input {
+    margin-top: 10px;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    height: 70vh;
+    background-color: var(--secodary-color);
+    border-radius: 20px;
+  }
+  .active {
+    background-color: #e0e9ff;
+  }
+.sidenav{
+    display:none;
+}
+
+  @media (max-width: 890px){
+    .container{
+        display: block;
+    }
+    .aside{
+        display: none;
+    }
+    .main{
+        margin-top: 50px;
+    }
+
+    /* The side navigation menu */
+.sidenav {
+    display: block;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  .www{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    z-index: 0;
+    color: orangered;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  }
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px; display: block;}
+    .sidenav a {font-size: 18px;}
+  }
